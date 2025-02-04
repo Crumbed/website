@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Kai Harrelson</title>
+        <link rel="icon" href="assets/cmd.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
         <script src="index.js"></script>
     </head>
@@ -12,7 +13,7 @@
         <header>
             <div class="container">
                 <h1>Kai Harrelson</h1>
-                <p>Back-End Developer</p>
+                <p>Software Engineer</p>
                 <nav>
                     <ul>
                         <li><a href="#about">About</a></li>
@@ -58,14 +59,75 @@
 
         <section id="projects" class="section">
             <div class="container">
-                <h2>Projects</h2>
+                <h2>Interesting Projects (more on my github)</h2>
                 <div class="project">
-                    <h3>Project 1: API for E-Commerce</h3>
-                    <p>A robust API for managing user authentication, product listings, and order processing for an e-commerce platform.</p>
+                    <h3>Computer Algebra System: CLI-based calculator (Rust)</h3>
+                    <p>
+                        A CLI-based calculator for solving general equaltions supporting:
+                        functions, variables, exponents, implicit multiplication, 
+                        & general math operations. Implementation is very similar 
+                        to a programming language interpreter, like python or lua,
+                        using a lexer to tokenize input, which is fed into an AST 
+                        parser, and finally interpreted to output equation results.
+                    </p>
+                    <a href="https://www.github.com/Crumbed/CAS">[Github link]</a>
                 </div>
                 <div class="project">
-                    <h3>Project 2: Data Analysis Pipeline</h3>
-                    <p>A data pipeline using Python to process and analyze large datasets, storing results in PostgreSQL for reporting.</p>
+                    <h3>CrumbMMO: MMORPG Minecraft plugin (Java + Spigot)</h3>
+                    <p>
+                        A Minecraft server plugin that vastly changes the core
+                        game logic to support more complex, data driven, 
+                        developement of, specifically rpg-like, games. 
+                        Currently has: a robust, scalable, & data driven ECS 
+                        (Entity Component System) to support and keep track of 
+                        new custom enemies, a scalable, data driven system for 
+                        adding custom items, an entirely new system for entity 
+                        stats, and a robust command system for debugging & giving
+                        power to players.
+                    </p>
+                    <a href="https://www.github.com/Crumbed/CrumbMMO">[Github link] Currently working on a major refactor, so the repo is outdated.</a>
+                </div>
+                <div class="project">
+                    <h3>Lehman Automation: An automated contact & logging for my teacher (Go)</h3>
+                    <p>
+                        Unfortunately the teacher this was made for didnt have
+                        the time to help me test this using a teacher account so
+                        I have no clue if this works as intended. However, its 
+                        supposed to make calls to the Canvas API (the service my school 
+                        used for online assignments) to get recently graded submissions.
+                        Then, if a submission was given a failing grade it would
+                        get that students contact info using the Google Sheets API
+                        and email said student, notifying them of the their failing 
+                        grade and sending them a document containing assignment 
+                        makeup & retake information. After all that it would then 
+                        update another spreadsheet containing logs of every automated
+                        contact that was made. This project was fun because I had 
+                        to figure out how the poorly documented Canvas API worked
+                        and use other Google APIs to solve a real world problem.
+                    </p>
+                    <a href="https://www.github.com/Crumbed/lehman_automation">[Github link] I have no documentation for how this works because I had no way of knowing if it DID work</a>
+                </div>
+                <div class="project">
+                    <h3>Wordle Solver: Algorithm for solving the daily Wordle (Python)</h3>
+                    <p>
+                        When Wordle blew up in popularity I realised that I was 
+                        very bad at it, so I wanted to make an program to solve
+                        Wordle faster and in fewer guesses than my friends.
+                        At the time you could get the list of all the possible
+                        Wordle solutions via inspect element, this was the core
+                        of my program. Using the list of solutions, I generated
+                        a dataset ranking how common every first, last, &
+                        combination of 2 letters assigning them a "weight". 
+                        Then I simply used user input of g(reen), y(ellow), or b(lack) 
+                        for each letter of the generated guess to filter out possible 
+                        solutions, and ranking the remaining solutions based on
+                        the generated dataset. In the end I made a program that
+                        not only solved Wordle faster than a human, but also in 
+                        less guesses on average. I submitted this project for my
+                        computer science final and got a 100% and a nice note from
+                        my teacher.
+                    </p>
+                    <a href="https://www.github.com/Crumbed/wordle-guesser">[Github link] Over 3 years old, not sure if it still works</a>
                 </div>
             </div>
         </section>
